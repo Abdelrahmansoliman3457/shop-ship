@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/select2.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/flat.css" />
     <link rel="stylesheet" href="css/style.css" />
     <!-- <link rel="stylesheet" href="css/rtl-style.css" /> -->
     <title>shop & ship</title>
@@ -26,7 +28,7 @@
     <!-- ************** end ajax loader ************** -->
     <!--start header-->
     <div class="header-main-content" style="
-        background-image: url('https://amx-sns-staging-blob.s3.amazonaws.com/images/default-source/sliders/slider-desktop/14-rates-and-fees-english.jpg?sfvrsn=b0b32bc2_6');
+        background-image: url('https://www.shopandship.com/images/default-source/slider-images/slider-desktop/tvc-mockup.png?Status=Master&sfvrsn=fa3a8076_4');
       ">
         <header class="header">
             <div class="container">
@@ -67,57 +69,57 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="membership.html" class="flex-in-drop">
+                                <a href="profile.html" class="flex-in-drop">
                                     <div class="in-f-text">membership plan</div>
                                 </a>
                             </li>
                             <li>
-                                <a href="shipping.html" class="flex-in-drop">
+                                <a href="profile.html" class="flex-in-drop">
                                     <div class="in-f-text">Shipping Fees</div>
                                 </a>
                             </li>
                             <li>
-                                <a href="s&s-protect.html" class="flex-in-drop">
+                                <a href="profile.html" class="flex-in-drop">
                                     <div class="in-f-text">S&S Protect</div>
                                 </a>
                             </li>
                             <li>
-                                <a href="s&s-select.html" class="flex-in-drop">
+                                <a href="profile.html" class="flex-in-drop">
                                     <div class="in-f-text">S&S Select</div>
                                 </a>
                             </li>
                             <li>
-                                <a href="s&s-perfume.html" class="flex-in-drop">
+                                <a href="profile.html" class="flex-in-drop">
                                     <div class="in-f-text">S&S Perfume</div>
                                 </a>
                             </li>
                             <li>
-                                <a href="Updates.html" class="flex-in-drop">
+                                <a href="profile.html" class="flex-in-drop">
                                     <div class="in-f-text">Services Updates</div>
                                 </a>
                             </li>
                             <li>
-                                <a href="faqs.html" class="flex-in-drop">
+                                <a href="profile.html" class="flex-in-drop">
                                     <div class="in-f-text">FAQs</div>
                                 </a>
                             </li>
                             <li>
-                                <a href="unacceptable.html" class="flex-in-drop">
+                                <a href="profile.html" class="flex-in-drop">
                                     <div class="in-f-text">Unacceptable Materials</div>
                                 </a>
                             </li>
                             <li>
-                                <a href="terms.html" class="flex-in-drop">
+                                <a href="profile.html" class="flex-in-drop">
                                     <div class="in-f-text">Terms & Conditions</div>
                                 </a>
                             </li>
                             <li>
-                                <a href="shop-directory.html" class="flex-in-drop">
+                                <a href="profile.html" class="flex-in-drop">
                                     <div class="in-f-text">Shopping Guide</div>
                                 </a>
                             </li>
                             <li>
-                                <a href="blog.html" class="flex-in-drop">
+                                <a href="profile.html" class="flex-in-drop">
                                     <div class="in-f-text">The S&S Blog</div>
                                 </a>
                             </li>
@@ -132,11 +134,8 @@
                     <div class="col-lg-7 empty-for-style"></div>
                     <div class="col-lg-5 h-100">
                         <div class="flex-header-col">
-                            <h2>No surprises just low shipping fees
-                            </h2>
-                            <p>Get the deets on shipping rates and fees for every country.
-                            </p>
-                            <a href="signup.html" class="main-btn up sign-header">signup</a>
+                            <!-- <h2 class="color-main">profile</h2> -->
+
                         </div>
                     </div>
                 </div>
@@ -148,118 +147,327 @@
     <!-- start content -->
     <div class="content section-pad">
         <div class="container">
+            <div class="terms-steps flex-profile mb-4">
 
-
-            <h6 class="mb-4 mt-2 font-bold main-blue">
-                RATES AND FEES
-            </h6>
-            <p class="main-p mb-5">
-                Learn how rates are calculated according to the origin, destination and weights.
-
-
-            </p>
-            <div class="col-lg-6">
-                <div class="position-relative web-select mb-4">
-                    <!-- add data-minimum-results-for-search="Infinity"  to disable search -->
-                    <select class="main-select">
-                        <option value="" selected disabled>From</option>
-                        <option value="">مجال 1</option>
-                        <option value="">مجال 2</option>
-                        <option value="">مجال 3</option>
-                    </select>
-                    <div class="abs-select">
-                        <i class="fa-solid fa-chevron-down"></i>
+                <div class="step-main step-onebtn active" onclick="showStep('step-one')">
+                    <div class="step-text">My Addresses
                     </div>
                 </div>
-                <div class="position-relative web-select mb-4">
-                    <!-- add data-minimum-results-for-search="Infinity"  to disable search -->
-                    <select class="main-select">
-                        <option value="" selected disabled>To</option>
-                        <option value="">مجال 1</option>
-                        <option value="">مجال 2</option>
-                        <option value="">مجال 3</option>
-                    </select>
-                    <div class="abs-select">
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-                </div>
-                <div class="mb-2 main-blue">Weight</div>
-                <div class="flex-sm-gap flex-home yes-wrap no-align">
-                    <div class="main-input-cont">
-                        <input type="number" placeholder="input value" class="main-input" />
-                    </div>
-                    <div class="position-relative web-select">
-                        <!-- add data-minimum-results-for-search="Infinity"  to disable search -->
-                        <select class="main-select" data-minimum-results-for-search="Infinity">
-                            <option value="" selected>Kg</option>
-                            <option value="">lbs</option>
-                        </select>
-                        <div class="abs-select">
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
-                    </div>
-                </div>
-                <button type="submit" class="main-btn up mt-4 showPrices">
-                    Submit
-                </button>
 
-                <div class="appended-div mt-5 hide-me">
-                    <div class="flex-sm-gap gap-big mb-2">
-                        <h6 class="main-blue mb-0">
-                            Final Price <span class="font-bold">S&S BASIC</span>
-                        </h6>
-                        <div class="main-color">Best Value Save 8%</div>
+
+                <div class="step-main step-twobtn" onclick="showStep('step-two')">
+                    <div class="step-text">My Packages
                     </div>
-                    <p>Our Lifetime Membership</p>
-                    <div class="price">435 USD</div>
-                    <a href="signup.html" class="main-btn2 sm up2 sign-header mt-4">signup</a>
                 </div>
+
+
+                <div class="step-main step-threebtn" onclick="showStep('step-three')">
+                    <div class="step-text">My Profile
+                    </div>
+                </div>
+                <div class="step-main step-fourbtn" onclick="showStep('step-four')">
+                    <div class="step-text">My Messages
+
+                    </div>
+                </div>
+                <div class="step-main step-fivebtn" onclick="showStep('step-five')">
+                    <div class="step-text">Package Alert
+
+
+                    </div>
+                </div>
+                <div class="step-main step-sexbtn" onclick="showStep('step-sex')">
+                    <div class="step-text">Claim packages
+                    </div>
+                </div>
+                <div class="step-main step-sevenbtn" onclick="showStep('step-seven')">
+                    <div class="step-text">My Requests
+                    </div>
+                </div>
+
             </div>
 
-            <div class="shared-box mt-5" style="background-image: url('imgs/shared.webp')">
+
+
+            <div class="main-p mb-5 single-step step-one">
                 <div class="row">
-                    <div class="col-lg-6 empty-for-style"></div>
-                    <div class="col-lg-6 h-100">
-                        <div class="flex-header-col">
-                            <h2 class="shared-h wid-def">
-                                SHOP FROM ANYWHERE AROUND THE WORLD WITH US
-                            </h2>
-                            <p class="gray-col font-weight">
-                                This is how amazing global shopping begins. Get access to our
-                                many physical addresses around the world to ship home almost
-                                everything you want.
-                            </p>
-                            <a href="signup.html" class="main-btn2 up2">Sign Up Now</a>
+                    <div class="col-lg-4">
+                        <div class="filter-main h-100">
+                            <div class="main-input-cont">
+                                <input type="text" placeholder="search..." class="main-input" />
+                                <div class="abs-select pointer-none">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                            <!-- loop here -->
+                            <div class="flex-countries">
+                                <div class="flex-sm-gap">
+                                    <img src="https://www.shopandship.com/images/default-source/flags/au.png"
+                                        class="country" alt="img">
+                                    <div class="text">Australia</div>
+                                </div>
+                                <div class="heart" onclick="toggleHeart(event , this)">
+                                    <i class="fa-regular fa-heart main-white"></i>
+                                    <i class="fa-solid fa-heart main-blue"></i>
+                                </div>
+                            </div>
+                            <div class="flex-countries">
+                                <div class="flex-sm-gap">
+                                    <img src="https://www.shopandship.com/images/default-source/flags/au.png"
+                                        class="country" alt="img">
+                                    <div class="text">Australia</div>
+                                </div>
+                                <div class="heart active" onclick="toggleHeart(event , this)">
+                                    <i class="fa-regular fa-heart main-white"></i>
+                                    <i class="fa-solid fa-heart main-blue"></i>
+                                </div>
+                            </div>
+                            <div class="flex-countries">
+                                <div class="flex-sm-gap">
+                                    <img src="https://www.shopandship.com/images/default-source/flags/au.png"
+                                        class="country" alt="img">
+                                    <div class="text">Australia</div>
+                                </div>
+                                <div class="heart" onclick="toggleHeart(event , this)">
+                                    <i class="fa-regular fa-heart main-white"></i>
+                                    <i class="fa-solid fa-heart main-blue"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="shared-box mt-4" style="background-image: url('imgs/ins.webp')">
-                <div class="row">
-                    <div class="col-lg-6 empty-for-style"></div>
-                    <div class="col-lg-6 h-100">
-                        <div class="flex-header-col">
-                            <h2 class="shared-h wid-def">
-                                SHIP AT A TAP WITH OUR APP
+                    <div class="col-lg-8">
+                        <div class="filter-main">
+                            <h6 class="main-blue">Address</h6>
+                            <hr>
+                            <div class="flex-sm-gap mb-3">
+                                <img src="https://www.shopandship.com/images/default-source/flags/au.png"
+                                    class="country" alt="img">
+                                <div class="text">Australia</div>
+                            </div>
+                            <div class="flex-big-gap mb-2 gray-col">
+                                <div class="right-te">Name</div>
+                                <div class="left-te">Wessam</div>
+                            </div>
+                            <div class="flex-big-gap mb-2 gray-col">
+                                <div class="right-te">Last Name </div>
+                                <div class="left-te">Elsharawy</div>
+                            </div>
+                            <div class="flex-big-gap mb-2 gray-col">
+                                <div class="right-te">Address Line1 </div>
+                                <div class="left-te">AIC 56a Anzac St
+                                </div>
+                            </div>
+                            <div class="flex-big-gap mb-2 gray-col">
+                                <div class="right-te">Address Line2 </div>
+                                <div class="left-te">CAI 814906
+                                </div>
+                            </div>
+                            <div class="flex-big-gap mb-2 gray-col">
+                                <div class="right-te">CITY</div>
+                                <div class="left-te">Chullora
+                                </div>
+                            </div>
+                            <div class="flex-big-gap mb-2 gray-col">
+                                <div class="right-te">State </div>
+                                <div class="left-te">NSW
+                                </div>
+                            </div>
+                            <div class="flex-big-gap mb-2 gray-col">
+                                <div class="right-te">ZipCode </div>
+                                <div class="left-te">2190
+                                </div>
+                            </div>
+                            <div class="flex-big-gap mb-2 gray-col">
+                                <div class="right-te">Tel</div>
+                                <div class="left-te">00612 9714 5866
+                                </div>
+                            </div>
 
-                            </h2>
-                            <p class="gray-col font-weight">
-                                Carry the world of shopping in your pocket. Download our mobile app now!
-
-
-                            </p>
-                            <div class="flex-sm-gap gap-big">
-                                <a href="#">
-                                    <img src="https://www.shopandship.com/Sitefinity/WebsiteTemplates/SNSTemplate/App_Themes/SNSTemplate/images/icon-apple.png" alt="">
-                                </a>
-                                <a href="#">
-                                    <img src="https://www.shopandship.com/Sitefinity/WebsiteTemplates/SNSTemplate/App_Themes/SNSTemplate/images/icon-android.png" alt="">
-                                </a>
+                            <div class="flex-sm-gap mt-4 mb-4">
+                                <input type="checkbox" checked id="myCheck" class="main-check">
+                                <label class="gray-col" for="myCheck">
+                                    s&s protect Enabled </label>
+                                <a href="s&s-protect.html" class="main-blue underline">s&s-protect</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="main-p mb-5 single-step step-two d-none text-center">
+                It looks like you don't have any incoming packages yet. Please come back later.
+                <div class="flex-group-me  mt-4">
+                    <button class="main-btn step-sexbtn  up" onclick="showStep('step-sex')">Clam Packages</button>
+                </div>
+            </div>
+            <p class="main-p mb-5 single-step step-three d-none">
+                this data comes from the ck editor 3
+            </p>
+            <p class="main-p mb-5 single-step step-four d-none text-center">
+                You don't have any messages yet!
+            </p>
+            <div class="main-p mb-5 single-step step-five d-none">
+                Expecting incoming shipment? you can now let us know if you are expecting to receive a shipment for
+                faster processing upon arrival.
+
+
+
+                <div class="col-lg-6 mt-4">
+                    <div class="flex-big-gap yes-wrap mb-4">
+                        <button type="button" class="main-btn up lg">Add incomming package</button>
+                        <button type="button" class="main-btn up lg">incomming delevry otp alert</button>
+                    </div>
+                    <div class="position-relative web-select mb-4">
+                        <div class="mb-1">S&S Address Country</div>
+                        <!-- add data-minimum-results-for-search="Infinity"  to disable search -->
+                        <select class="main-select">
+                            <option value="" selected disabled>S&S Address Country*</option>
+                            <option value="">مجال 1</option>
+                            <option value="">مجال 2</option>
+                            <option value="">مجال 3</option>
+                        </select>
+                        <div class="main-float">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="position-relative web-select mb-4">
+                        <div class="mb-1">Carrier</div>
+                        <!-- add data-minimum-results-for-search="Infinity"  to disable search -->
+                        <select class="main-select">
+                            <option value="" selected disabled>S&S Address Country*</option>
+                            <option value="">مجال 1</option>
+                            <option value="">مجال 2</option>
+                            <option value="">مجال 3</option>
+                        </select>
+                        <div class="main-float">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="main-input-cont mt-4">
+                        <h6 class="mb-2 font14">Tracking NO.</h6>
+                        <input type="number" class="main-input" />
+                    </div>
+
+                    <div class="main-input-cont  mt-4">
+                        <h6 class="mb-2 font14">Expected Delivery</h6>
+                        <input
+                          type="text"
+                          class="main-input maindate"
+                        />
+                        <div
+                          class="gray-col pointer-none main-float"
+                        >
+                          <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                      </div>
+
+                    <div class="main-input-cont mt-4">
+                        <h6 class="mb-2 font14">Website </h6>
+                        <input type="text" class="main-input" />
+                    </div>
+                    <div class="main-input-cont mt-4">
+                        <h6 class="mb-2 font14">Item Description</h6>
+                        <input type="text" class="main-input" />
+                    </div>
+                    <div class="main-input-cont mt-4">
+                        <h6 class="mb-2 font14">Item Value</h6>
+                        <input type="text" class="main-input" />
+                    </div>
+                    <label for="filesNext_input" class="main-input-cont mt-4 w-100">
+                        <h6 class="mb-2 font14">Invoice</h6>
+                        <input type="text" class="main-input pointer-none" />
+                        <div class="main-float pointer-click">
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+                    </label>
+                    <div class="uploaded__area mt-2" id="filesNext_cont"></div>
+                    <input type="file" data-single="true" hidden id="filesNext_input" class="heddenUploud files-input"
+                        name="filesNext[]" data-input="filesNext" accept="image/*" value="" />
+
+                    <div class="flex-group-me  mt-4">
+                        <button class="main-btn step-sexbtn  up">Submit</button>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="main-p mb-5 single-step step-sex d-none">
+                Did not receive your package yet? We are here to help. Please fill in the below information:
+
+                <div class="col-lg-6 mt-4">
+                    <div class="position-relative web-select mb-4">
+                        <div class="mb-1">S&S Address Country</div>
+                        <!-- add data-minimum-results-for-search="Infinity"  to disable search -->
+                        <select class="main-select">
+                            <option value="" selected disabled>From</option>
+                            <option value="">مجال 1</option>
+                            <option value="">مجال 2</option>
+                            <option value="">مجال 3</option>
+                        </select>
+                        <div class="main-float">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="flex-big-gap">
+                        <div class="flex-sm-gap">
+                            <input type="radio" checked onchange="showMain('have')" id="myCheckmain" class="main-check"
+                                name="number">
+                            <label for="myCheckmain">I have a supplier tracking number</label>
+                        </div>
+                        <div class="flex-sm-gap">
+                            <input type="radio" id="myCheck2" class="main-check" onchange="showMain('donthave')"
+                                name="number">
+                            <label for="myCheck2">I don’t have a supplier tracking number</label>
+                        </div>
+                    </div>
+                    <div class="main-input-cont mt-4">
+                        <h6 class="mb-2 font14">Search</h6>
+                        <input type="text" class="main-input" />
+                        <div class="main-float pointer-click">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div class="styled mt-4 have d-none">
+                        <i class="fa-solid fa-check color-main"></i>
+                        Good News we found the package! The S&S tracking number is 9556347091. To claim the package
+                        please fill in the below additional information:
+                    </div>
+                    <div class="styled mt-4 donthave">
+                        <i class="fa-solid fa-marker main-blue"></i>
+                        You can submit your claim request without a supplier tracking number by filling in the
+                        information below. To help us locate your shipment faster, please contact your supplier to
+                        provide you with the package’s tracking number.
+                    </div>
+                    <div class="main-input-cont mt-4">
+                        <h6 class="mb-2 font14">Website Name</h6>
+                        <input type="text" class="main-input" />
+                    </div>
+                    <div class="main-input-cont mt-4">
+                        <h6 class="mb-2 font14">Item Description</h6>
+                        <input type="text" class="main-input" />
+                    </div>
+                    <label for="filesNext_input" class="main-input-cont mt-4 w-100">
+                        <h6 class="mb-2 font14">Invoice</h6>
+                        <input type="text" class="main-input pointer-none" />
+                        <div class="main-float pointer-click">
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+                    </label>
+                    <div class="uploaded__area mt-2" id="filesNext_cont"></div>
+                    <input type="file" data-single="true" hidden id="filesNext_input" class="heddenUploud files-input"
+                        name="filesNext[]" data-input="filesNext" accept="image/*" value="" />
+
+                    <div class="flex-group-me  mt-4">
+                        <button class="main-btn step-sexbtn  up" onclick="showStep('step-sex')">Clam Packages</button>
+                    </div>
+
+
+                </div>
+            </div>
+            <p class="main-p mb-5 single-step step-seven d-none text-center">
+                You dont have any requests yet!
+            </p>
+
+
         </div>
     </div>
 
@@ -673,7 +881,122 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/select2.js"></script>
+    <script src="js/flat.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
+    <!-- flatpickr -->
+    <script>
+              flatpickr(".maindate", {
+        disableMobile: "true",
+        minDate : new Date(),
+      });
+    </script>
+
+    <!------------abload files------------->
+    <script>
+        let inputsFiles = {};
+        $(".files-input").on("change", function (event) {
+            let input = $(this).data("input");
+            const selectedFilesCont = document.getElementById(input + "_cont");
+            if (!!inputsFiles[input]) {
+                let files = new DataTransfer();
+                for (let i = 0; i < event.target.files.length; i++) {
+                    files.items.add(event.target.files[i]);
+                }
+                for (let i = 0; i < inputsFiles[input].length; i++) {
+                    files.items.add(inputsFiles[input][i]);
+                }
+                inputsFiles[input] = files.files;
+                selectedFilesCont.innerHTML = "";
+            } else {
+                inputsFiles[input] = event.target.files;
+            }
+            if (!!inputsFiles[input] && inputsFiles[input].length > 0) {
+                if ($(this).data("single") == true) {
+                    selectedFilesCont.innerHTML = "";
+                    inputsFiles[input] = event.target.files;
+                }
+                for (let i = 0; i < inputsFiles[input].length; i++) {
+                    const fileType = inputsFiles[input][i].type.split("/")[0];
+                    if (fileType === "image") {
+                        let src = URL.createObjectURL(inputsFiles[input][i]);
+                        $("#" + input + "_cont").append(` <div class="file_">
+                                                                                    <a data-fancybox="gallery" href="${src}">
+                                                                                        <img src="${src}" alt="">
+                                                                                    </a>
+                                                                                    <div class="remove_media" onclick="deleteFile(this ,'${inputsFiles[input][i].name}' ,'${input}')"><i class="fa-solid fa-xmark font13"></i></div>
+                                                                                </div>`);
+                    } else if (fileType === "video") {
+                        let src = URL.createObjectURL(inputsFiles[input][i]);
+
+                        $("#" + input + "_cont").append(`<div class="file_">
+                                                                                    <a data-fancybox="gallery" data-type="video" href="${src}">
+                                                                                        <video controls>
+                                                                                            <source src="${src}" type="video/mp4">
+                                                                                        </video>
+                                                                                        <div class="play-button"><i class="fas fa-play-circle"></i></div>
+                                                                                    </a>
+                                                                                    <div class="remove_media" onclick="deleteFile(this ,'${inputsFiles[input][i].name}' ,'${input}')"><i class="fa-solid fa-xmark font13"></i></div>
+                                                                                </div>`);
+                    } else {
+                        let src = URL.createObjectURL(inputsFiles[input][i]);
+                        $("#" + input + "_cont").append(`<div class="file_">
+                                                                                    <a href="${src}" target='_blank' class="docs_file">
+                                                                                        <div class="d-flex flex-column align-items-center justify-content-center h-100 p-2">
+                                                                                            <span class="font10">${inputsFiles[input][i].name}</span>
+                                                                                            <span><i class="far fa-file-pdf mr-1 ml-1"></i></span>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                    <div class="remove_media" onclick="deleteFile(this ,'${inputsFiles[input][i].name}' ,'${input}')"><i class="fa-solid fa-xmark font13"></i></div>
+                                                                                </div>`);
+                    }
+                }
+            }
+            event.target.files = inputsFiles[input];
+        });
+
+        function deleteFile(ele, name, input) {
+            let filesInput = document.getElementById(input + "_input");
+            let files = new DataTransfer();
+            let deleted = null;
+            for (let i = 0; i < filesInput.files.length; i++) {
+                if (filesInput.files[i].name == name && deleted != name) {
+                    deleted = name;
+                    continue;
+                }
+                files.items.add(filesInput.files[i]);
+            }
+            filesInput.files = files.files;
+            inputsFiles[input] = files.files;
+
+            // edit the number of parents to delete
+            $(ele).parent().remove();
+        }
+    </script>
+
+    <!-- toggleHeart -->
+    <script>
+        function toggleHeart(e, ele) {
+            e.stopPropagation()
+            $(ele).toggleClass('active');
+        }
+    </script>
+
+    <!-- show step -->
+    <script>
+        function showStep(step) {
+            $(".step-main").removeClass('active');
+            $("." + step + 'btn').addClass('active');
+            $(".single-step").hide();
+            $("." + step).removeClass('d-none');
+            $("." + step).show();
+        }
+        function showMain(step) {
+            $(".styled").hide();
+            $("." + step).removeClass('d-none');
+            $("." + step).show();
+        }
+    </script>
 
     <script>
         //  input focus on modal open
